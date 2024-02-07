@@ -37,15 +37,6 @@
         </div>
         <div class="w-2/4 ">
             {% for book in books %}
-                <!-- <div >
-                    <img src="{{book.book_image.url}}"  alt="book images">
-                    <div>
-                    <h5>{{book.title}}</h5>
-                    <p>{{book.description | truncatewords:10}}</p>
-                    <p>Price : {{book.borrowed_price}} BDT</p>
-                    <a href="{% url 'details' book.id %}">Details</a>
-                    </div>
-                </div> -->
                 <div class="max-w-sm w-full lg:max-w-full lg:flex my-5">
                     <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{book.book_image.url}}')" title="Woman holding a mug">
                     </div>
